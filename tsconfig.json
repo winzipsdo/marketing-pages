@@ -1,0 +1,47 @@
+{
+  "compilerOptions": {
+    "typeRoots": ["./node_modules/vue/types"],
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": [
+      "node",
+      "mocha",
+      "chai"
+    ],
+    "paths": {
+      "~/*": ["./common/*"],
+      "~js/*": ["./common/js/*"],
+      "~img/*": ["./common/img/*"],
+      "~css/*": ["./common/css/*"],
+      "~components/*": ["./common/components/*"]
+    },
+    "lib": [
+      "esnext",
+      "dom",
+      "dom.iterable",
+      "scripthost"
+    ]
+  },
+  "include": [
+    "pages/**/*.ts",
+    "pages/**/*.tsx",
+    "pages/**/*.vue",
+    "common/**/*.ts",
+    "common/**/*.tsx",
+    "common/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

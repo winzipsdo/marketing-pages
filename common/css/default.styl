@@ -1,0 +1,81 @@
+a, abbr, acronym, address, applet, area, article, aside, audio, 
+b, base, basefont, bdi, bdo, big, blockquote, body, br , button, 
+canvas, caption, center, cite, code, col, colgroup, command, 
+datalist, dd, del, details, dfn, dir, div, dl, dt, 
+em, embed, 
+fieldset, figure, figcaption, footer, form, font, frame, frameset, 
+h1, h2, h3, h4, h5, h6, head, header, hgroup, hr, html, 
+i, iframe, img, input, ins, isindex, 
+keygen, kbd, 
+li, label, legend, link, 
+map, mark, menu, meter, 
+nav, noframes, 
+object, ol, optgroup, option, output, 
+p, param, pre, progress, 
+q, 
+rp, rt, ruby, 
+s, samp, section, select, summary, small, source, strike, strong, sub, sup, span, 
+table, tbody, tfoot, thead, tr, th, td, tt, time, textarea, title, track, 
+u, ul, 
+var, video, 
+xml
+  margin: 0
+  padding: 0
+  border: 0
+  font: inherit
+  font-size: 100%
+  vertical-align: baseline // 元素放置在父元素的基线上
+  box-sizing: border-box // 将元素变为w3c盒子
+  -webkit-tap-highlight-color: transparent // 当用户点击iOS的Safari浏览器中的链接或JavaScript的可点击的元素时，覆盖显示的高亮颜色
+html
+  background-color: #f5f5f5
+  body
+    margin: 0 auto
+    font-size: .24rem
+    max-width: 750px
+    min-height: 100vh
+    background: #fff
+    line-height: 1
+    text-rendering: optimizeLegibility; // 渲染文字的情况越来越多，浏览器会侧重文本的可读性（清晰度
+    -webkit-font-smoothing: antialiased; // 对字体进行抗锯齿渲染可以使字体看起来会更清晰舒服
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga","kern"
+    font-family: Microsoft Yahei, PingFang SC, tahoma, arial, Hiragino Sans GB, WenQuanYi Micro Hei, '\5b8b\4f53', sans-serif
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section
+      display: block
+    button,input,select,textarea
+      text-rendering: optimizeLegibility
+      -webkit-font-smoothing: antialiased
+      -moz-osx-font-smoothing: grayscale
+      -moz-font-feature-settings: "liga", "kern"
+    select 
+      appearance: none // 改变元素外观
+      -moz-appearance: none
+      -webkit-appearance: none
+    em
+      font-style: normal
+    a
+      text-decoration: none
+      color: #999
+      &:hover
+        color: #666
+    a, button, input
+      outline: none
+      outline-offset: 0
+      &:focus, &:active
+        outline: none
+        outline-offset: 0
+    table
+      border-collapse: collapse
+      border-spacing: 0
+    input::-webkit-input-placeholder, input::-moz-placeholder, input:-moz-placeholder, input:-ms-input-placeholder
+      color: #333
+    input:focus::-webkit-input-placeholder, input:focus::-moz-placeholder, input:focus:-moz-placeholder, input:focus:-ms-input-placeholder
+      color: transparent
+    blockquote, q
+      quotes: none
+      &:before, &:after
+        content: ''
+        content: none

@@ -1,0 +1,4 @@
+pages/**/*.js
+pages/**/*.js.map
+common/**/*.js
+common/**/*.js.map
